@@ -475,9 +475,15 @@ console.log( sortPresidentsByBirthYear(presidents) );
 
 
 // Bonus: Iteration 5 | Age at Inauguration - `map()`
-function getAgeAtInauguration(presidentsArr) {}
-
-
+function getAgeAtInauguration(presidentsArr) {
+  let ageAtInauguration = presidentsArr.map ((eachPresident) => {
+    eachPresident.ageAtInauguration = eachPresident.tookOffice - eachPresident.birthYear
+    
+      return eachPresident
+  })
+  console.log (ageAtInauguration)
+  return ageAtInauguration
+}
 
 
 // Bonus: Iteration 6 | Presidents Born After - `filter()`
